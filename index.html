@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detailing Pro • Studio & Mobile Service</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background:#25D366;
+      color:white;
+      padding:14px 18px;
+      border-radius:50px;
+      font-size:20px;
+      text-decoration:none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index:999;
+    }
+    .whatsapp-button:hover { background:#1ebe5d; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">DETAILING PRO</div>
+  <nav>
+    <a href="#services">სერვისები</a>
+    <a href="#mobile">გამოძახება</a>
+    <a href="#contact">კონტაქტი</a>
+  </nav>
+</header>
+
+<section class="hero" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-car.jpg') center/cover no-repeat;">
+  <div class="hero-content">
+    <h1>პროფესიონალური Car Detailing<br>სტუდიაში ან შენთან ადგილზე</h1>
+    <p>დაზოგე დრო — ჩვენ მოვალთ აღჭურვილობით და დაგიბრუნებთ იდეალურად სუფთა მანქანას.</p>
+    <a href="#contact" class="btn">დაჯავშნე გამოძახება</a>
+    <a href="#services" class="btn secondary">იხილე სერვისები</a>
+  </div>
+
+  <div class="slider-container">
+    <div class="slider">
+      <img src="hero-before.jpg" alt="Before">
+      <img src="hero-after.jpg" alt="After">
+    </div>
+    <button id="prev">◀</button>
+    <button id="next">▶</button>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">რატომ ჩვენ?</h2>
+  <div class="features">
+    <div class="feature-card">🚐 ადგილზე მომსახურება</div>
+    <div class="feature-card">🧼 პრემიუმ მასალები</div>
+    <div class="feature-card">⏱ სწრაფი სერვისი</div>
+    <div class="feature-card">⭐ გარანტირებული ხარისხი</div>
+  </div>
+</section>
+
+<section id="services">
+  <h2 class="section-title">სერვისები</h2>
+  <div class="services">
+    <div class="service-card"><h3>Exterior Detailing</h3><p>გარეცხვა და დაცვა</p></div>
+    <div class="service-card"><h3>Interior Detailing</h3><p>სალონის ღრმა წმენდა</p></div>
+    <div class="service-card"><h3>Ceramic Coating</h3><p>გრძელვადიანი დაცვა</p></div>
+    <div class="service-card"><h3>Mobile Detailing</h3><p>გამოძახებით, შენს ლოკაციაზე</p></div>
+  </div>
+
+  <!-- ახალი collage სურათი -->
+  <div class="service-gallery">
+    <img src="service-collage.jpg" alt="Detailing Services">
+  </div>
+</section>
+
+<section id="mobile">
+  <h2 class="section-title">როგორ მუშაობს გამოძახება</h2>
+  <div class="steps">
+    <div class="step">1. ირჩევ სერვისს</div>
+    <div class="step">2. უთითებ ლოკაციას</div>
+    <div class="step">3. მოვდივართ აღჭურვილობით</div>
+    <div class="step">4. იღებ სუფთა მანქანას</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">დაჯავშნა / კონტაქტი</h2>
+  <form action="https://wa.me/995XXXXXXXXX?text=გამარჯობა!%20მინდა%20დაჯავშნა%20Detailing%20Service" method="get">
+    <input type="text" placeholder="სახელი" required>
+    <input type="tel" placeholder="ტელეფონი" required>
+    <button type="submit">WhatsApp-ზე გაგზავნა</button>
+  </form>
+</section>
+
+<footer>
+  <p>📞 +995 XXX XX XX XX | 💬 WhatsApp</p>
+  <p>© 2026 Detailing Pro. All rights reserved.</p>
+</footer>
+
+<a href="https://wa.me/995XXXXXXXXX" target="_blank" class="whatsapp-button">💬</a>
+
+<script>
+  const slider = document.querySelector('.slider');
+  const slides = slider.querySelectorAll('img');
+  let current = 0;
+
+  document.getElementById('next').onclick = () => {
+    slides[current].style.display='none';
+    current = (current+1)%slides.length;
+    slides[current].style.display='block';
+  }
+  document.getElementById('prev').onclick = () => {
+    slides[current].style.display='none';
+    current = (current-1+slides.length)%slides.length;
+    slides[current].style.display='block';
+  }
+
+  slides.forEach((img,i)=>{ if(i!==0) img.style.display='none'; });
+</script>
+
+</body>
+</html>
