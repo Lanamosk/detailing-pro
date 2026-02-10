@@ -212,6 +212,90 @@ footer{padding:40px;background:var(--bg-light);text-align:center;font-size:14px;
 .btn:hover {
   background: linear-gradient(90deg, #555555, #AAAAAA);
   transform: translateY(-2px);
+}/* ===============================
+   Modern Elegant Silver Gradient
+=============================== */
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@400;500&display=swap');
+
+/* Body & Base */
+body {
+  background-color: #1E1E1E; /* Dark background */
+  color: #E0E0E0;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  background: linear-gradient(90deg, #B0B0B0, #E0E0E0); /* silver gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #A0A0A0; /* light silver */
+  margin-bottom: 32px;
+}
+
+/* Section Titles */
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  background: linear-gradient(90deg, #B0B0B0, #E0E0E0); /* silver gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* Buttons */
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #888888, #CCCCCC); /* silver gradient */
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #AAAAAA, #FFFFFF); /* hover silver gradient */
+  transform: translateY(-2px);
+}
+
+/* Additional text */
+p, li {
+  color: #B0B0B0;
+}
+
+/* Footer */
+.footer {
+  color: #909090;
+  font-size: 14px;
+}
+
 
 
