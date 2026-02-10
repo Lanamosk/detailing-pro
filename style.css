@@ -90,4 +90,8 @@ footer{padding:40px;background:var(--bg-light);text-align:center;font-size:14px;
 .btn {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+}.btn {
+  background: linear-gradient(90deg, #FFD700, #FFA500);
+  color: #000; /* ტექსტი მუქი, რომ გამოჩნდეს */
 }
+
