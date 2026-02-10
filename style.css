@@ -87,15 +87,28 @@ footer{padding:40px;background:var(--bg-light);text-align:center;font-size:14px;
   margin-bottom: 40px;
 }
 
+/* ===============================
+   Brushed Aluminum Buttons
+=============================== */
+
 .btn {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-}.btn {
-  background: linear-gradient(90deg, #FFD700, #FFA500);
-  color: #000; /* ტექსტი მუქი, რომ გამოჩნდეს */
-}/* ===============================
-   Modern Elegant Dark Text
-=============================== */
+  padding: 14px 28px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #A0A0A0, #C0C0C0); /* subtle silver gradient */
+  color: #E0E0E0; /* brushed aluminum text */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #C0C0C0, #E0E0E0); /* hover gradient */
+  transform: translateY(-2px);
+}
 
 /* Hero Title */
 .hero h1 {
