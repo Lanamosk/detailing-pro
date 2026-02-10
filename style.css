@@ -146,5 +146,59 @@ footer{padding:40px;background:var(--bg-light);text-align:center;font-size:14px;
   background: linear-gradient(90deg, #555555, #AAAAAA);
   transform: translateY(-2px);
 }
+/* ===============================
+   Brushed Aluminum Modern Text
+=============================== */
+
+/* Hero Title */
+.hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  color: #C0C0C0; /* Brushed Aluminum / subtle silver */
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* subtle metallic effect */
+}
+
+/* Hero Subtitle / Paragraph */
+.hero p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #A0A0A0; /* brushed aluminum light shade */
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* Section Titles */
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #C0C0C0; /* brushed aluminum */
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Buttons */
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #666666, #888888);
+  color: #E0E0E0; /* brushed aluminum text */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s all ease;
+}
+.btn:hover {
+  background: linear-gradient(90deg, #555555, #AAAAAA);
+  transform: translateY(-2px);
+}
 
 
