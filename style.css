@@ -93,5 +93,58 @@ footer{padding:40px;background:var(--bg-light);text-align:center;font-size:14px;
 }.btn {
   background: linear-gradient(90deg, #FFD700, #FFA500);
   color: #000; /* ტექსტი მუქი, რომ გამოჩნდეს */
+}/* ===============================
+   Modern Elegant Dark Text
+=============================== */
+
+/* Hero Title */
+.hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  color: #E0E0E0; /* მუქი ნაცრისფერი */
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
+
+/* Hero Subtitle / Paragraph */
+.hero p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #B0B0B0; /* თბილი ნაცრისფერი */
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* Section Titles */
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #E0E0E0;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* Buttons */
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #666666, #888888);
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s all ease;
+}
+.btn:hover {
+  background: linear-gradient(90deg, #555555, #AAAAAA);
+  transform: translateY(-2px);
+}
+
 
